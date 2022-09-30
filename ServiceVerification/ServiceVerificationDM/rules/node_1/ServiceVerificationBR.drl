@@ -7,5 +7,9 @@
 	number2 is "H" 
 	and number1 is "L" 
 then
-	set decision to "Hello" ;]]></definition>
+	set decision to "Hello"+number2 ;
+else
+ set decision to "Bye"+number2 ;
+
+    ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
