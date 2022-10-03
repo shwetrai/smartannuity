@@ -24,7 +24,7 @@
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set 'decision' to a new Decison where
+                        <Text><![CDATA[set 'decision' to a new Decision where
 	the discount is <discount> , 
 	the loyaltyType is <loyaltyType>]]></Text>
                     </ExpressionDefinition>
