@@ -97,7 +97,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[0.06]]></Param>
+                                <Param><![CDATA[0.05]]></Param>
                                 <Param><![CDATA["Bronze"]]></Param>
                             </Expression>
                         </Action>
