@@ -17,14 +17,14 @@
                         <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[true]]></Property>
                     </Properties>
                     <ExpressionDefinition>
-                        <Text><![CDATA[amountSpent is at least <min> and less than <max>]]></Text>
+                        <Text><![CDATA[MonthlyExpense is at least <min> and less than <max>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new Decison where
+                        <Text><![CDATA[set 'decision' to a new Decison where
 	the discount is <discount> , 
 	the loyaltyType is <loyaltyType>]]></Text>
                     </ExpressionDefinition>
@@ -97,7 +97,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[0.05]]></Param>
+                                <Param><![CDATA[0.06]]></Param>
                                 <Param><![CDATA["Bronze"]]></Param>
                             </Expression>
                         </Action>
@@ -138,7 +138,6 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(A0)[]#Format"><![CDATA[{0}]]></Data>
             <Data Name="Definitions(A0)[0]#Format"><![CDATA[{0,number,#0.##%}]]></Data>
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[amountSpent]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[discount]]></Data>

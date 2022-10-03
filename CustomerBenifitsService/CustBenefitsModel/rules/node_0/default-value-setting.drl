@@ -3,5 +3,5 @@
   <name>default-value-setting</name>
   <uuid>8bc1fe66-475b-4c20-bbfb-04057475cf80</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set amountSpent to 0;]]></definition>
+  <definition><![CDATA[set MonthlyExpense to 0;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

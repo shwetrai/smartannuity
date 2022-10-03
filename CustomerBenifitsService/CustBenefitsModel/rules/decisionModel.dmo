@@ -7,24 +7,24 @@
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="node_0" name="amountSpent">
+    <inputData id="node_0" name="MonthlyExpense">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.Long" collection="false" name="amountSpent"/>
+                <output bomType="java.lang.Long" collection="false" name="MonthlyExpense"/>
                 <rule defaultRule="true" href="node_0/default-value-setting.drl" kind="BusinessRule" name="default-value-setting"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="amountSpent" typeRef="java.lang.Long"/>
+        <variable id="node_0_ii" name="MonthlyExpense" typeRef="java.lang.Long"/>
     </inputData>
-    <decision id="node_1" name="Decision">
+    <decision id="node_1" name="Cutomer Benefits">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.Long" collection="false" name="amountSpent"/>
-                <output bomType="cp4admin.employee_benefits.customerbenifitsservice.decisionout.Discount" collection="false" name="Decision"/>
+                <input bomType="java.lang.Long" collection="false" name="MonthlyExpense"/>
+                <output bomType="cp4admin.employee_benefits.customerbenifitsservice.decisionout.Discount" collection="false" name="Cutomer Benefits"/>
                 <rule defaultRule="false" href="node_1/CustomerLoyalty.dmt" kind="DecisionTable" name="CustomerLoyalty"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Decision" typeRef="cp4admin.employee_benefits.customerbenifitsservice.decisionout.Discount"/>
+        <variable id="node_1_ii" name="Cutomer Benefits" typeRef="cp4admin.employee_benefits.customerbenifitsservice.decisionout.Discount"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
