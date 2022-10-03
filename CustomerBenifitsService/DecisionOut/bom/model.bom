@@ -1,0 +1,26 @@
+
+package cp4admin.employee_benefits.customerbenifitsservice.decisionout;
+
+
+public class Discount
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "discount"
+        property "de.generated" "true"
+{
+    public double discount
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "discount"
+                property update "true";
+    public string loyaltyType
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "loyaltyType"
+                property update "true";
+    public Discount(double discount, string loyaltyType)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Discount()
+                property "dataio.default" "true";
+}
+
