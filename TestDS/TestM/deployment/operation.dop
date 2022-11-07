@@ -4,4 +4,13 @@
   <uuid>d86810a1-2f0b-4d87-8136-9061303fd391</uuid>
   <decisionModel href="../rules/decisionModel.dmo#66ad0e55-da7e-479a-a8ea-0811f4652b9f"/>
   <targetRuleProject href="../../TestM#20988a69-d126-4b5e-b85f-9535b7842f26"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["TestM"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
